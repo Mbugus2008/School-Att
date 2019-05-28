@@ -1,12 +1,32 @@
-﻿<NavigationWindow x:Class="School.MainWindow"
+﻿<Page xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/navbar"  xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:School"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"  x:Class="School.MainWindow"
         mc:Ignorable="d"
+            ShowsNavigationUI="False"      
+        Title="MainWindow" Height="450" Width="800" >
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <dxr:RibbonControl RibbonStyle="Office2010" ShowApplicationButton="False" 
+                   >
+              
+            </dxr:RibbonControl>
+        </StackPanel>
+
+        <dxn:NavBarControl Width="150" DockPanel.Dock="Left">
+            <dxn:NavBarControl.Groups>
+                <dxn:NavBarGroup Header="Students">
+                    <dxn:NavBarItem x:Name="studentlist" Click="NavBarItem_Click">
+                        Student List</dxn:NavBarItem>
                   
-        Title="MainWindow" Height="450" Width="800" Source="login.xaml">
-  
-    
-</NavigationWindow>
+                </dxn:NavBarGroup>
+            </dxn:NavBarControl.Groups>
+            
+        </dxn:NavBarControl>
+
+        <Frame x:Name="Content" DockPanel.Dock="Top" Height="auto"/>
+    </DockPanel>
+</Page>

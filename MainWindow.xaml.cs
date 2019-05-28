@@ -18,11 +18,28 @@ namespace School
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class MainWindow : Page
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RibbonControl_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void NavBarItem_Click(object sender, EventArgs e)
+        {
+            switch (((DevExpress.Xpf.NavBar.NavBarItem)sender).Name)
+            {
+                case "studentlist":
+                    Content.Navigate(new Uri("studentlist.xaml", UriKind.RelativeOrAbsolute));
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

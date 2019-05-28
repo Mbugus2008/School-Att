@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School.csproj", "{62928359-A8EF-4EF1-92F3-148BC9B37244}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portals", "Portals", "{55264BE4-3AA3-409C-8214-8FB611DA4E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mwalimu", "Mwalimu", "{266867CB-F81C-439F-A198-3EAA215D40BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agency", "..\Mwalimu\Agency\Agency.csproj", "{00060B0C-01B9-4606-9E46-EC36BD59CDB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM", "..\Mwalimu\ATM\ATM.csproj", "{7D8DEBA8-C0F6-467E-A5E3-E2E03F37DA0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileBanking", "..\Mwalimu\MobileBankingMwalimu\MobileBanking\MobileBanking.csproj", "{A91707BF-D8A0-4C08-9A2E-AE9889A3F391}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{A3739AA0-C201-4A2F-BBA7-6DF785261046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "..\Mwalimu\Logging\Logging.csproj", "{1C78E6B7-870D-41D4-8234-FB43FE8B16B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62928359-A8EF-4EF1-92F3-148BC9B37244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62928359-A8EF-4EF1-92F3-148BC9B37244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62928359-A8EF-4EF1-92F3-148BC9B37244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62928359-A8EF-4EF1-92F3-148BC9B37244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00060B0C-01B9-4606-9E46-EC36BD59CDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00060B0C-01B9-4606-9E46-EC36BD59CDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00060B0C-01B9-4606-9E46-EC36BD59CDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00060B0C-01B9-4606-9E46-EC36BD59CDB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8DEBA8-C0F6-467E-A5E3-E2E03F37DA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8DEBA8-C0F6-467E-A5E3-E2E03F37DA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8DEBA8-C0F6-467E-A5E3-E2E03F37DA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8DEBA8-C0F6-467E-A5E3-E2E03F37DA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91707BF-D8A0-4C08-9A2E-AE9889A3F391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91707BF-D8A0-4C08-9A2E-AE9889A3F391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91707BF-D8A0-4C08-9A2E-AE9889A3F391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91707BF-D8A0-4C08-9A2E-AE9889A3F391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C78E6B7-870D-41D4-8234-FB43FE8B16B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C78E6B7-870D-41D4-8234-FB43FE8B16B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C78E6B7-870D-41D4-8234-FB43FE8B16B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C78E6B7-870D-41D4-8234-FB43FE8B16B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62928359-A8EF-4EF1-92F3-148BC9B37244} = {55264BE4-3AA3-409C-8214-8FB611DA4E97}
+		{00060B0C-01B9-4606-9E46-EC36BD59CDB7} = {266867CB-F81C-439F-A198-3EAA215D40BF}
+		{7D8DEBA8-C0F6-467E-A5E3-E2E03F37DA0C} = {266867CB-F81C-439F-A198-3EAA215D40BF}
+		{A91707BF-D8A0-4C08-9A2E-AE9889A3F391} = {266867CB-F81C-439F-A198-3EAA215D40BF}
+		{1C78E6B7-870D-41D4-8234-FB43FE8B16B9} = {A3739AA0-C201-4A2F-BBA7-6DF785261046}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC08CE77-66B3-44BB-85CD-6E52C87284FC}
+	EndGlobalSection
+EndGlobal

@@ -29,7 +29,7 @@ namespace School
 
         private void login(object sender, RoutedEventArgs e)
         {
-            var user = db.Users.FirstOrDefault(o => o.Username == usernameTextBox.Text && o.Password == passwordTextBox.Text);
+            var user = db.Users.FirstOrDefault(o => o.Username == usernameTextBox.Text && o.Password == passwordTextBox.Password);
             if (user == null)
             {
                 MessageBox.Show("Username or Password is invalid");

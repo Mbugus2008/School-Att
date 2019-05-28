@@ -4,26 +4,38 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:School"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Login" Loaded="Page_Loaded" WindowHeight="0">
+      mc:Ignorable="d"
+      Title="Login" 
+      Loaded="Page_Loaded" 
+    
+      Height="374.916" Width="445"
+      ShowsNavigationUI="False"
+      >
     <Page.Resources>
         <CollectionViewSource x:Key="userViewSource" d:DesignSource="{d:DesignInstance {x:Type local:User}, CreateList=True}"/>
     </Page.Resources>
 
-    <Grid Loaded="Grid_Loaded">
+    <Grid 
+        Height="auto"
+        Width="auto"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+          
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="grid2">
-        <Button  Width="66" 
-                 Padding="0" 
-                 Margin="106,68,628,366"
-                 Click="login"
-                 >login</Button>
-        <Button  Width="66" Padding="0" Margin="35,68,699,366" Content="Cancel"/>
-        </Grid>
-        <Grid x:Name="grid1" DataContext="{StaticResource userViewSource}" HorizontalAlignment="Left" Margin="1,-2,0,0" VerticalAlignment="Top">
+        
+        <Grid x:Name="grid1" 
+              DataContext="{StaticResource userViewSource}" 
+              HorizontalAlignment="Left" Margin="0,0,0,0" 
+              VerticalAlignment="Top"
+              Grid.Column="0"
+              Grid.Row="0"
+              >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -31,10 +43,14 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Content="Username:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <Label Content="User Name:" Grid.Column="0" 
+                      Width="80" HorizontalAlignment="Right"
+                   HorizontalContentAlignment="Right"
+                   Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <TextBox x:Name="usernameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding Username, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
-        <Grid x:Name="grid2" DataContext="{StaticResource userViewSource}" HorizontalAlignment="Left" Margin="4,30,0,0" VerticalAlignment="Top">
+
+        <Grid x:Name="grid2" DataContext="{StaticResource userViewSource}" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -42,9 +58,60 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Content="Password:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="passwordTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding Password, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+            <Label Content="Password:" Grid.Column="0" 
+                   Width="80"
+                   HorizontalContentAlignment="Right"
+                   HorizontalAlignment="Left" Margin="3" 
+                   Grid.Row="0" VerticalAlignment="Center"
+                   />
+            <PasswordBox 
+                x:Name="passwordTextBox" 
+                         Grid.Column="1"
+                         HorizontalAlignment="Left"
+                         Height="23"
+                         Margin="3" 
+                         Grid.Row="0" 
+                         PasswordChar="*" 
+                         VerticalAlignment="Center" 
+                         Width="120"
+                     />
         </Grid>
 
+        <Grid x:Name="grid3" 
+              Margin="0,60,0,0" 
+              HorizontalAlignment="Right"  
+              VerticalAlignment="Top"
+            
+              >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button  
+                Grid.Column="0" 
+                Grid.Row="0" 
+               
+                Content="Cancel">
+
+            </Button>
+
+            <Button  
+                     Grid.Column="1" 
+                     Grid.Row="0"
+                Margin="30,0,10,0"
+                     Click="login" 
+                     Content="Login" 
+                
+                   
+                >
+
+
+            </Button>
+
+        </Grid>
     </Grid>
 </Page>
